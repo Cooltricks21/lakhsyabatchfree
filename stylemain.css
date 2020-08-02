@@ -1,0 +1,320 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing:border-box;
+	
+
+}
+header{
+	position: absolute;
+	top:0;
+	left: 0;
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 100px;
+	transition:0.6s;
+
+
+
+}
+.logo{
+	position: relative;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.6s;
+}
+.banner
+{
+position: relative;
+width: 100%;
+min-height: 100vh;
+padding: 100px;
+background: url(bg.jpg);
+background-size: cover;
+display: flex;
+align-items: center;
+transform: 0.5s;
+z-index: 2;
+}
+#toggle{
+position: relative;
+width: 30px;
+height: 30px;
+cursor: pointer;
+
+}
+#toggle:before{
+	content: '';
+	position: absolute;
+	top:7px;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+
+}
+#toggle:after {
+	content: '';
+	position: absolute;
+	bottom: :7px;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	
+}
+.banner.active header #toggle:before{
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%) rotate(45deg);
+
+}
+.banner.active header #toggle:after{
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%) rotate(-45deg);
+
+}
+.banner.active{
+	transform: translateX(-400px);
+}
+#navigation{
+	position: absolute;
+	top: 0;
+	right: 0px;
+	width:400px;
+	height: 100vh;
+	background: #40c3ff;
+	z-index:1;
+	display: grid;
+	place-items: center;
+	transition: 0.5s;
+
+
+}
+#navigation.active{
+	right: 0;
+
+
+}
+#navigation ul{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+}
+#navigation ul li{
+	list-style: none;
+
+}
+#navigation ul li a {
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 2em;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.content{
+	max-width: 600px;
+
+}
+.content h2{
+	color:#fff;
+	
+	font-size: 3em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+.content h2 span{
+	color:#40c3ff;
+	font-size: 1.2em;
+}
+.content p{
+	font-size: 1.8em;
+	color:#fff;
+	font-weight: 300;
+}
+.content a{
+	position: relative;
+	display: inline-block;
+	margin:20px;
+	background: #fff;
+	color: #000;
+	padding: 10px 30px;
+	text-decoration: none;
+	font-size: 1.2em;
+	font-weight:500;
+
+}
+.sci{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	right:100px;
+
+}
+.sci li{
+	list-style: none;
+
+
+}
+.sci li a{
+	position: relative;
+	display:grid;
+	place-items:center;
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+	border: 1px solid #fff;
+	margin: 10px 0 0;
+}
+.sci li a:hover{
+	background: #fff;
+}
+.sci li a i{
+	max-width: 20px;
+
+	mix-blend-mode: difference;
+	text-decoration: none;
+	color: #fff;
+
+}
+@media (max-width: 767px)
+{
+	header{
+		
+		padding: 20px 50px;
+		
+
+
+   }
+   .banner{
+   	padding: 100px 50px 150px;
+
+   }
+   .banner h2{
+   	font-size: 1.8em;
+   }
+   .banner .content p,
+   .banner .content a,
+   {
+   	font-size: 1em;
+
+   }
+   .banner.active{
+	transform: translateX(-250px);
+}
+#navigation{
+	width: 250px;
+
+}
+   #navigation ul li a{
+ font-size: 1.5em;
+ margin:5px 0;
+}
+.sci{
+	position: absolute;
+	bottom: 50px;
+	right: initial;
+	flex-direction: row;
+
+}
+.sci li a{
+	margin: initial;
+	margin-right: 10px;
+
+}
+.conatiner{
+	display: flex;
+	flex-direction: column;
+}
+.box{
+	display: flex;
+	flex-direction: column;
+}
+.box2{
+	display: flex;
+	flex-direction: column;
+}
+.box3{
+	display: flex;
+	flex-direction: column;
+}
+.card{
+	margin-left:  0;
+}
+
+
+.services h1{
+	font-size: 70px;
+	text-align: left;
+	margin-left: 10px;
+	font-family: 'poppins';
+    color: black; 
+}
+
+
+}
+
+#table1{
+	
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  overflow: hidden;
+}
+#table1 td, .table1 th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+#table1 tr:hover {background-color: #ddd;}
+
+#table1 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+
+
+}
+#table1 td{
+	background: #fff;
+	align-items: center;
+	justify-content: center;
+	margin-left: 20px;
+	text-align: center;
+	overflow: hidden;
+
+}
+#table1 td:hover{
+	background:#20edf7;
+}
+.dpp2 h1{
+	background: #000;
+	color: #fff;
+	font-family: 'Footlight MT Light';
+    text-align: center;
+    justify-content: center;
+    font-size: 100px;
+    margin: 10px;
+
+}
+.channels h1{
+
+
+    color: black;
+    
+    font-size: 40px;
+}
+
